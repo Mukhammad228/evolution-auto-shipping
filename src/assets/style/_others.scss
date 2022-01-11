@@ -1,0 +1,111 @@
+:root {
+    --colorMain: #fde344;
+    --colorMain2: #ff8200;
+    --fontColor: #81899c;
+    --darkgreyColor: #0e1c3c;
+    --greyColor: #f8f8f8;
+    --darkColor: #0b0e1e;
+    --darkBlueColor: #12172d;
+    --darkLightColor: #182443;
+    --colorMainRgba05: rgba(253, 227, 68, 0.5);
+    --colorMainRgba09: rgba(253, 227, 68, 0.9);
+    --colorMainBrighter15: #ffe442;
+    --colorMainLighter10: #feeb76;
+    --colorMainDarker10: #fcdb12;
+    --colorMain2Darker10: #cc6800;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    @media (max-width: 768px){
+      &{
+        font-size: 13px;
+      }
+    }
+  }
+  
+  body{
+    &::-webkit-scrollbar {
+      width: 8px; /* width of the entire scrollbar */
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: var(--colorMain) ; /* color of the tracking area */
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color:var(--darkgreyColor); /* color of the scroll thumb */
+    }
+  
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--greyColor);
+    outline: none;
+    text-decoration-color: var(--colorMain);
+  }
+  
+  section {
+    padding: 0 15px;
+    width: 100%;
+  }
+  
+  a{
+    text-decoration: none
+  }
+  
+  ul,li,ol{
+    list-style: none;
+  }
+  
+  button,input,textarea, select, option{
+    outline: none;
+  }
+  
+  @mixin d-flex($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+  }
+  
+  @media (min-width: 575.98px) {
+    section {
+      padding: 0 calc(50% - 270px);
+    }
+  }
+    
+  @media (min-width: 767.98px) {
+    section {
+      padding: 0 calc(50% - 360px);
+    }
+  }
+    
+  @media (min-width: 991.98px) {
+    section {
+      padding: 0 calc(50% - 480px);
+    }
+  }
+    
+  @media (min-width: 1199.98px) {
+    section {
+      padding: 0 calc(50% - 590px);
+    }
+  }
+    
+  @media (min-width: 1400px) {
+    section {
+      padding: 0 calc(50% - 700px);
+    }
+  }
+    
+  @media (min-width: 1600px) {
+    section {
+      padding: 0 calc(50% - 790px);
+    }
+  }  
